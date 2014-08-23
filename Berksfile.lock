@@ -1,0 +1,22 @@
+DEPENDENCIES
+  jenkins
+  joad-ci
+    path: .
+    metadata: true
+
+GRAPH
+  apt (2.5.3)
+  build-essential (2.0.6)
+  jenkins (2.1.2)
+    apt (~> 2.0)
+    runit (~> 1.5)
+    yum (~> 3.0)
+  joad-ci (0.1.0)
+    jenkins (>= 0.0.0)
+  runit (1.5.10)
+    build-essential (>= 0.0.0)
+    yum (~> 3.0)
+    yum-epel (>= 0.0.0)
+  yum (3.2.4)
+  yum-epel (0.4.0)
+    yum (~> 3.0)
