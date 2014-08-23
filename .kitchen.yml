@@ -1,13 +1,16 @@
 ---
 driver:
-  name: vagrant
+  name: docker
+  socket: <%= ENV['DOCKER_HOST'] %>
 
 provisioner:
   name: chef_zero
 
 platforms:
   - name: ubuntu-12.04
-  - name: centos-6.4
+    driver-config:
+      image: chef/ubuntu-12.04
+      platform: ubuntu
 
 suites:
   - name: default
