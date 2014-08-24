@@ -8,3 +8,6 @@
 #
 
 include_recipe "jenkins::master"
+
+jenkins_plugin "git"
+jenkins_plugin "docker-build-publish"
