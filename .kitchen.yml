@@ -2,6 +2,7 @@
 driver:
   name: docker
   socket: <%= ENV['DOCKER_HOST'] %>
+  forward: 8080
 
 provisioner:
   name: chef_zero
