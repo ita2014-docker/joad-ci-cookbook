@@ -7,3 +7,4 @@ long_description 'Installs/Configures joad-ci'
 version          '0.1.0'
 
 depends 'jenkins'
+depends 'docker'
