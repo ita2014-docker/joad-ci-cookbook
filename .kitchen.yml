@@ -8,9 +8,9 @@ provisioner:
   name: chef_zero
 
 platforms:
-  - name: ubuntu-12.04
+  - name: ubuntu-14.04
     driver-config:
-      image: chef/ubuntu-12.04
+      image: chef/ubuntu-14.04
       platform: ubuntu
 
 suites:
