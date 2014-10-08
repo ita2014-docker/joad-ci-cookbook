@@ -23,3 +23,7 @@ dpkg_package "chefdk" do
   source chefdk_file_path
   action :install
 end
+
+execute "install gems" do
+  command "chef gem install knife-container kitchen-docker --no-ri --no-rdoc"
+end
